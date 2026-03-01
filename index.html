@@ -5,6 +5,116 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Basic Web - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        header ul {
+            display: flex;
+        }
+
+        header li {
+            list-style: none;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        header a:hover {
+            color: #aaa;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .hero {
+            background-color: #aaa;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+
+        .hero p {
+            color: #fff;
+        }
+
+        .services {
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        .service {
+            background-color: #aaa;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .service h2 {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .service p {
+            color: #fff;
+            font-size: 1.0rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media(max-width:700px){
+            .services{
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .service{
+                height: 120px;
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 
 <body>
