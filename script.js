@@ -15,8 +15,13 @@ const regex_email = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 const regex_message = /^.{1,10}$/;
 
 //buttonクリック時の動作を定義
-button.addEventListener("click", (e) => {
+button.addEventListener("click", async (e) => {
     e.preventDefault();
+
+    //処理中ボタンを押せないようにする
+    button.disabled = true;
+    //ボタンのテキストを変更
+    button.textContent = "通信中・・・";
 
 
     //一旦エラーリセット
@@ -46,9 +51,23 @@ button.addEventListener("click", (e) => {
         alert_message += "フォームから取得した情報は以下の通りです。\n";
         alert_message += ` title=${title.value},\n email=${email.value},\n message=${message.value}\n`;
         alert_message += "実際のシステムではこれらの値をAPIに送信したり、DBに保存したりして利用します。"
+
+        //Sleep的な処理
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
         //アラート表示
         alert(alert_message);
+
+        //値をリセット
+        title.value = "";
+        email.value = "";
+        message.value = "";
+
     }
+
+    //ボタンを元に戻す
+    button.textContent = "問合せる";
+    button.disabled = false;
 
 });
 
