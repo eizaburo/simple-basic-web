@@ -90,6 +90,31 @@
 
         });
 
+        //入力時バリデーション
+        title.addEventListener("keyup", (e) => {
+            if (title.value == "") {
+                error_message_title.classList.add("show");
+            } else {
+                error_message_title.classList.remove("show");
+            }
+        });
+
+        email.addEventListener("keyup", (e) => {
+            if (email.value == "") {
+                error_message_email.classList.add("show");
+            } else {
+                error_message_email.classList.remove("show");
+            }
+        });
+
+        message.addEventListener("keyup", (e) => {
+            if (message.value == "") {
+                error_message_message.classList.add("show");
+            } else {
+                error_message_message.classList.remove("show");
+            }
+        });
+
     </script>
 </body>
 
