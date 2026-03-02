@@ -40,11 +40,13 @@ button.addEventListener("click", (e) => {
     if (!error_message_title.classList.contains("show") &&
         !error_message_email.classList.contains("show") &&
         !error_message_message.classList.contains("show")) {
-        //条件がOKだったら実行する処理
+        
+        //条件がOKだったら実行する処理（API連携するときはここを改修）
         let alert_message = "";
         alert_message += "フォームから取得した情報は以下の通りです。\n";
         alert_message += ` title=${title.value},\n email=${email.value},\n message=${message.value}\n`;
         alert_message += "実際のシステムではこれらの値をAPIに送信したり、DBに保存したりして利用します。"
+        //アラート表示
         alert(alert_message);
     }
 
