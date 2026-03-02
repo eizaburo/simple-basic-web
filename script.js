@@ -12,6 +12,7 @@ const error_message_message = document.getElementById("error_message_message");
 //バリデーション用の正規表現定義
 const regex_title = /^.{1,10}$/;
 const regex_email = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+// const regex_email = /^(?=.{1,32}$)[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
 const regex_message = /^.{1,10}$/;
 
 //buttonクリック時の動作を定義
