@@ -39,7 +39,7 @@
                 <p class="error_message" id="error_message_message">お問合せ内容を正しく入力して下さい。</p>
 
                 <button id="button">問合せる</button>
-                
+
             </form>
         </section>
     </main>
@@ -47,6 +47,20 @@
         footer
     </footer>
     <script>
+
+        //基本要素の取得
+        const title = document.getElementById("title");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+        const button = document.getElementById("button");
+
+        //buttonクリック時の動作を定義
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            alert(`title=${title.value}, email=${email.value}, message=${message.value}`);
+
+        });
 
     </script>
 </body>
