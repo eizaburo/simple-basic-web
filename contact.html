@@ -54,11 +54,39 @@
         const message = document.getElementById("message");
         const button = document.getElementById("button");
 
+        //エラー要素の取得
+        const error_message_title = document.getElementById("error_message_title");
+        const error_message_email = document.getElementById("error_message_email");
+        const error_message_message = document.getElementById("error_message_message");
+
         //buttonクリック時の動作を定義
         button.addEventListener("click", (e) => {
             e.preventDefault();
 
-            alert(`title=${title.value}, email=${email.value}, message=${message.value}`);
+
+            //一旦エラーリセット
+            error_message_title.classList.remove("show");
+            error_message_email.classList.remove("show");
+            error_message_message.classList.remove("show");
+
+            //各値の条件判断」
+            if (title.value == "") {
+                error_message_title.classList.add("show");
+            }
+
+            if (email.value == "") {
+                error_message_email.classList.add("show");
+            }
+
+            if (message.value == "") {
+                error_message_message.classList.add("show");
+            }
+
+            if (!error_message_title.classList.contains("show") &&
+                !error_message_email.classList.contains("show") &&
+                !error_message_message.classList.contains("show")) {
+                alert(`title=${title.value}, email=${email.value}, message=${message.value}`);
+            }
 
         });
 
