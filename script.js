@@ -40,7 +40,7 @@ button.addEventListener("click", (e) => {
     if (!error_message_title.classList.contains("show") &&
         !error_message_email.classList.contains("show") &&
         !error_message_message.classList.contains("show")) {
-        
+
         //条件がOKだったら実行する処理（API連携するときはここを改修）
         let alert_message = "";
         alert_message += "フォームから取得した情報は以下の通りです。\n";
@@ -75,4 +75,4 @@ message.addEventListener("keyup", (e) => {
     } else {
         error_message_message.classList.remove("show");
     }
-        });
+});
