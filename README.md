@@ -29,11 +29,17 @@ clone -b extension/api-gas https://github.com/eizaburo/simple-basic-web.git
 
 # Requirements
 
+## フロント側
+
 ブラウザがあれば動きますが、作成者は以下の環境で作成しています。
 
 - macOS
 - Chrome
 - VSCode
+
+## API側
+
+API側については[simple-api-gasリポジトリ](https://github.com/eizaburo/simple-api-gas)を参考にしてください。
 
 # 学習コンテンツとしてのゴール
 
