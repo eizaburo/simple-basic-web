@@ -48,16 +48,29 @@ button.addEventListener("click", async (e) => {
         !error_message_message.classList.contains("show")) {
 
         //条件がOKだったら実行する処理（API連携するときはここを改修）
-        let alert_message = "";
-        alert_message += "フォームから取得した情報は以下の通りです。\n";
-        alert_message += ` title=${title.value},\n email=${email.value},\n message=${message.value}\n`;
-        alert_message += "実際のシステムではこれらの値をAPIに送信したり、DBに保存したりして利用します。"
+        
+        //URLは各自の環境にわせて変更して下さい
+        const api_url = "https://script.google.com/macros/s/{デプロイID}/exec";
 
-        //Sleep的な処理
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        try {
+            const result = await fetch(api_url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams({
+                    title: title.value,
+                    email: email.value,
+                    message: message.value
+                }).toString()
+            });
 
-        //アラート表示
-        alert(alert_message);
+            const text = await result.text();
+            alert(text);
+
+        } catch (error) {
+            alert(error);
+        }
 
         //値をリセット
         title.value = "";
