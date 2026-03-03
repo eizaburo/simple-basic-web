@@ -50,29 +50,27 @@ button.addEventListener("click", async (e) => {
         //条件がOKだったら実行する処理（API連携するときはここを改修）
         
         //URLは各自の環境にわせて変更して下さい
-        const api_url = "https://script.google.com/macros/s/{デプロイID}/exec";
-        //simple-api-expressと連携する場合は、以下のようにする。
-        // const api_url = "http://localhost:3333/text/contacts";
+        const api_url = "http://localhost:3333/json/contacts";
 
         try {
 
-            //APIを呼び出してレスポンスを処理
+            //APIを呼び出してレスポンスを処理（JSON形式で送信）
             const result = await fetch(api_url, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
+                    "Content-Type": "application/json"
                 },
-                body: new URLSearchParams({
+                body: JSON.stringify({
                     title: title.value,
                     email: email.value,
                     message: message.value
-                }).toString()
+                })
             });
 
-            //resultからテキストメッセージを取り出し
-            const text = await result.text();
+            //resultからjsonメッセージを取り出し
+            const json = await result.json();
             //アラートで表示
-            alert(text);
+            alert(json.message);
 
         } catch (error) {
             //エラー時はエラーをアラートで表示

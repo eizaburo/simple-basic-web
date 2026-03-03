@@ -6,13 +6,13 @@
 
 # ブランチ情報
 
-本ブランチはGASで作成されたAPIとの連携を想定したもの。
+本ブランチはnode.js(express)で作成されたAPIとの連携を想定したもの。
 
 >但し、コード中のURLは各自の環境に応じて変更して下さい。
 
 # 動作確認
 
-実際に動くものは[Github Pages](https://eizaburo.github.io/simple-basic-web/index.html)で公開しています。
+実際に動くもの（フロントのみ）は[Github Pages](https://eizaburo.github.io/simple-basic-web/index.html)で公開しています。
 
 > 但し、このサンプル自体はAPIと連携していません。
 
@@ -24,10 +24,12 @@
 - Google Spreadsheetに期待通り値が格納されているか確認
 
 ```
-clone -b extension/api-gas https://github.com/eizaburo/simple-basic-web.git
+clone -b extension/api-express https://github.com/eizaburo/simple-basic-web.git
 ```
 
 # Requirements
+
+## フロント側
 
 ブラウザがあれば動きますが、作成者は以下の環境で作成しています。
 
@@ -35,10 +37,16 @@ clone -b extension/api-gas https://github.com/eizaburo/simple-basic-web.git
 - Chrome
 - VSCode
 
+## API側
+
+API側については[simple-api-expresリポジトリ](https://github.com/eizaburo/simple-api-express)を参考にしてください。
+
+
 # 学習コンテンツとしてのゴール
 
 - 簡単なWebアプリを作れるようになる
 - HTML/CSS/JavaScriptの役割について理解し説明できるようになる
+- JSONとは何かを理解し、説明できるようになる
 
 
 # 応用学習例
