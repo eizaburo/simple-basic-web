@@ -37,8 +37,8 @@ clone -b extension/api-gas https://github.com/eizaburo/simple-basic-web.git
 
 # 学習コンテンツとしてのゴール
 
-- HTML/CSS/JavaScriptの役割について理解し説明できるようになる
 - 簡単なWebアプリを作れるようになる
+- HTML/CSS/JavaScriptの役割について理解し説明できるようになる
 
 
 # 応用学習例
