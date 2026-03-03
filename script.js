@@ -53,6 +53,8 @@ button.addEventListener("click", async (e) => {
         const api_url = "https://script.google.com/macros/s/{デプロイID}/exec";
 
         try {
+
+            //APIを呼び出してレスポンスを処理
             const result = await fetch(api_url, {
                 method: "POST",
                 headers: {
@@ -65,10 +67,13 @@ button.addEventListener("click", async (e) => {
                 }).toString()
             });
 
+            //resultからテキストメッセージを取り出し
             const text = await result.text();
+            //アラートで表示
             alert(text);
 
         } catch (error) {
+            //エラー時はエラーをアラートで表示
             alert(error);
         }
 
