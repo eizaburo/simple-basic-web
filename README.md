@@ -14,14 +14,17 @@
 
 実際に動くものは[Github Pages](https://eizaburo.github.io/simple-basic-web/index.html)で公開しています。
 
-> なお、API連携等はmainブランチでは実装していません。
+> 但し、このサンプル自体はAPIと連携していません。
 
 # セットアップ方法
 
-クライアント側（ブラウザのみ）で関係しているWebアプリのため、cloneしてindex.htmlをブラウザ等で開くだけ。
+- ブランチを指定してclone
+- script.js内のapi_url値を自分の環境に合わせて変更
+- ブラウザでformを操作
+- Google Spreadsheetに期待通り値が格納されているか確認
 
 ```
-clone https://github.com/eizaburo/simple-basic-web.git
+clone -b extension/api-gas https://github.com/eizaburo/simple-basic-web.git
 ```
 
 # Requirements
