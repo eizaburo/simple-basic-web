@@ -51,6 +51,8 @@ button.addEventListener("click", async (e) => {
         
         //URLは各自の環境にわせて変更して下さい
         const api_url = "https://script.google.com/macros/s/{デプロイID}/exec";
+        //simple-api-expressと連携する場合は、以下のようにする。
+        // const api_url = "http://localhost:3333/text/contacts";
 
         try {
 
