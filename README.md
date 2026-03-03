@@ -28,8 +28,8 @@ clone https://github.com/eizaburo/simple-basic-web.git
 
 # 学習コンテンツとしてのゴール
 
+- 簡単なWebアプリを作れるようになる（意味を理解して書けるようになる）
 - HTML/CSS/JavaScriptの役割について理解し説明できるようになる
-- 簡単なWebアプリを作れるようになる
 
 
 # 応用学習例
