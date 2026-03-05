@@ -1,4 +1,4 @@
-# Simple Basic Web
+# Simple Web Vanilla
 
 開発・技術学習用のシンプルなWebアプリ。
 
@@ -12,7 +12,7 @@
 
 # 動作確認
 
-実際に動くもの（フロントのみ）は[Github Pages](https://eizaburo.github.io/simple-basic-web/index.html)で公開しています。
+実際に動くもの（フロントのみ）は[Github Pages](https://eizaburo.github.io/simple-web-vanilla/index.html)で公開しています。
 
 > 但し、このサンプル自体はAPIと連携していません。
 
@@ -24,7 +24,7 @@
 - Google Spreadsheetに期待通り値が格納されているか確認
 
 ```
-clone -b extension/api-express https://github.com/eizaburo/simple-basic-web.git
+clone -b extension/api-express https://github.com/eizaburo/simple-web-vanilla.git
 ```
 
 # Requirements
