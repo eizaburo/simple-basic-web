@@ -1,4 +1,4 @@
-# Simple Basic Web
+# Simple Web Vanilla
 
 開発・技術学習用のシンプルなWebアプリ。
 
@@ -6,7 +6,7 @@
 
 # 動作確認
 
-実際に動くものは[Github Pages](https://eizaburo.github.io/simple-basic-web/index.html)で公開しています。
+実際に動くものは[Github Pages](https://eizaburo.github.io/simple-web-vanilla/index.html)で公開しています。
 
 > なお、API連携等はmainブランチでは実装していません。
 
@@ -15,7 +15,7 @@
 クライアント側（ブラウザのみ）で関係しているWebアプリのため、cloneしてindex.htmlをブラウザ等で開くだけ。
 
 ```
-clone https://github.com/eizaburo/simple-basic-web.git
+clone https://github.com/eizaburo/simple-web-vanilla.git
 ```
 
 # Requirements
