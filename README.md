@@ -9,9 +9,9 @@
 - main
   - formは値の取得だけ。外部連携なし。
 - extension/api-express
-  - simple-api-expressと連携を想定。
+  - simple-api-expressと連携を想定。application/json
 - extension/api-gas
-  - GASとの連携を想定。
+  - GASとの連携を想定。appliation/x-www-form-urlencoded
 
 # 動作確認
 
