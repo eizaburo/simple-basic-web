@@ -1,4 +1,4 @@
-# Simple Web Vanilla
+# simeple-web-vanilla
 
 開発・技術学習用のシンプルなWebアプリ。
 
@@ -6,9 +6,12 @@
 
 # ブランチ情報
 
-本ブランチはGASで作成されたAPIとの連携を想定したもの。
-
->但し、コード中のURLは各自の環境に応じて変更して下さい。
+- main
+  - formは値の取得だけ。外部連携なし。
+- extension/api-express
+  - simple-api-expressと連携を想定。application/json
+- extension/api-gas
+  - GASとの連携を想定。appliation/x-www-form-urlencoded
 
 # 動作確認
 
