@@ -1,4 +1,4 @@
-# Simple Web Vanilla
+# simeple-web-vanilla
 
 開発・技術学習用のシンプルなWebアプリ。
 
