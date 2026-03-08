@@ -4,6 +4,15 @@
 
 > Webアプリ開発の学習ではなく、システム開発に関する知識を広く・浅く身につけるための学習を想定しています。
 
+# ブランチ情報
+
+- main
+  - formは値の取得だけ。外部連携なし。
+- extension/api-express
+  - simple-api-expressと連携を想定。
+- extension/api-gas
+  - GASとの連携を想定。
+
 # 動作確認
 
 実際に動くものは[Github Pages](https://eizaburo.github.io/simple-web-vanilla/index.html)で公開しています。
