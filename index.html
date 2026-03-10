@@ -5,40 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Basic Web - Home</title>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-gray-800 text-white flex justify-between items-center px-5 py-5">
         header
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="flex">
+                <li><a href="index.html" class="text-white no-underline px-5 hover:text-gray-400">Home</a></li>
+                <li><a href="contact.html" class="text-white no-underline px-5 hover:text-gray-400">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1>ヒーローエリア</h1>
-            <p>ヒーローエリアのキャッチコピー</p>
+    <main class="flex-1">
+        <section class="bg-gray-400 h-[200px] flex flex-col justify-center items-center">
+            <h1 class="text-white text-[1.8rem]">ヒーローエリア</h1>
+            <p class="text-white">ヒーローエリアのキャッチコピー</p>
         </section>
-        <section class="services">
-            <div class="service">
-                <h2>サービスA</h2>
-                <p>サービスAの説明</p>
+        <section class="flex flex-col items-center gap-5 mt-10 md:flex-row md:justify-evenly md:gap-2.5">
+            <div class="bg-gray-400 h-[120px] w-4/5 flex flex-col justify-center items-center md:h-[200px] md:w-[200px]">
+                <h2 class="text-white text-[1.2rem]">サービスA</h2>
+                <p class="text-white">サービスAの説明</p>
             </div>
-            <div class="service">
-                <h2>サービスB</h2>
-                <p>サービスBの説明</p>
+            <div class="bg-gray-400 h-[120px] w-4/5 flex flex-col justify-center items-center md:h-[200px] md:w-[200px]">
+                <h2 class="text-white text-[1.2rem]">サービスB</h2>
+                <p class="text-white">サービスBの説明</p>
             </div>
-            <div class="service">
-                <h2>サービスC</h2>
-                <p>サービスCの説明</p>
+            <div class="bg-gray-400 h-[120px] w-4/5 flex flex-col justify-center items-center md:h-[200px] md:w-[200px]">
+                <h2 class="text-white text-[1.2rem]">サービスC</h2>
+                <p class="text-white">サービスCの説明</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-gray-800 text-white mt-10 py-5 text-center">
         footer
     </footer>
 </body>
